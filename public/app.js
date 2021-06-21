@@ -22,7 +22,7 @@ function renderStudents(doc){
         test.stopPropagation();
         let id = test.target.parentElement.getAttribute('data-id');
         console.log(id);
-        db.collection('classA').doc(id).delete();
+        db.collection('ClassA').doc(id).delete();
     });
     //
 
@@ -30,7 +30,7 @@ function renderStudents(doc){
 }
 
 // getting data 
-db.collection('classA').get().then(data => {
+db.collection('ClassA').get().then(data => {
     data.docs.forEach(doc => {
         renderStudents(doc);
     });
@@ -40,7 +40,7 @@ db.collection('classA').get().then(data => {
 // add data
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    db.collection('classA').add({
+    db.collection('ClassA').add({
         name: form.name.value,
         gender: form.gender.value,
         age: form.age.value
