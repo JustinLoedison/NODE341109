@@ -38,6 +38,20 @@ db.collection('ClassA').get().then(data => {
 // 
 
 // add data
+//=== change preventDefault to onclick
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     db.collection('ClassA').add({
+//         name: form.name.value,
+//         gender: form.gender.value,
+//         age: form.age.value
+//     });
+//     form.name.value = '';
+//     form.gender.value = '';
+//     form.age.value = '';
+// });
+// //===
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     db.collection('ClassA').add({
@@ -49,4 +63,3 @@ form.addEventListener('submit', (e) => {
     form.gender.value = '';
     form.age.value = '';
 });
-//

@@ -20,7 +20,7 @@ router.get('/', function(req, res) {
 // define the about route
 router.get('/about', function(req, res) {
   res.send(
-    '<h1> About Fisheep </h1>'+
+    '<h1> About NODE341109 </h1>'+
     '\n <img src="https://www.omgtw.com/upload/article/original/be134fac90625546754962aeef34925c.jpg" height="60%">'
     );
 });
