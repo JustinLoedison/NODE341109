@@ -1,6 +1,6 @@
 let express = require('express');
 let router = express.Router();
-let Fisheep = require('./Fisheep.js');
+let NODE341109 = require('./NODE341109.js');
 let Alice = require('./Alice.js');
 let Bob = require('./Bob.js');
 router.get('/', (req, res) => {
@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     }
     res.sendFile("index.html", options)
 })
-router.use('/NODE341109', Fisheep);
+router.use('/NODE341109', NODE341109);
 router.use('/Alice', Alice);
 router.use('/Bob', Bob);
 
