@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <!--控制板頁的縮放-->
+        <meta charset ="utf-8"/> 
         <link rel="stylesheet" href="styles.css">
     </head>
     <h1>ClassA</h1>
@@ -12,13 +15,13 @@
                 <input type="text" name="age" placeholder="輸入 Student's age">
                 <!-- <button> Add a student </button>  
                 修改按鈕 -->
-                <button onclick = "submit()" > Add a student </button> 
+                <button> Add a student </div> 
             </form>
             <table id="stu-table" cellpadding="10" border="1" width="100%">
                 　<tr>
                 　  <td>姓名</td>
-                　  <td>年齡</td>
                     <td>性別</td>
+                　  <td>年齡</td>
                 　</tr>
             </table>
         </div>
@@ -47,5 +50,8 @@
     firebase.analytics();
     const db = firebase.firestore();
     </script>
+    
     <script src="app.js"></script>
+    <!-- 6/25 test the botton -->
+
 </html>

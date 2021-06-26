@@ -16,6 +16,9 @@ function renderStudents(doc){
     
     // delete 
     let cross = document.createElement('div');
+    //refer Chinghua12
+    cross.setAttribute('class', 'de-do');
+    //refer Chinghua12
     cross.textContent = 'x';
     tr.appendChild(cross);
     cross.addEventListener('click', (test) => {
@@ -37,32 +40,18 @@ db.collection('ClassA').get().then(data => {
 });
 // 
 
-// add data
-//=== change preventDefault to onclick
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     db.collection('ClassA').add({
-//         name: form.name.value,
-//         gender: form.gender.value,
-//         age: form.age.value
-//     });
-//     form.name.value = '';
-//     form.gender.value = '';
-//     form.age.value = '';
-// });
-// //===
+//add data
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    db.collection('ClassA').add({
+        name: form.name.value,
+        gender: form.gender.value,
+        age: form.age.value
+    });
+    form.name.value = '';
+    form.gender.value = '';
+    form.age.value = '';
+});
+//===
 
 //add function submit
-function submit(){
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        db.collection('ClassA').add({
-            name: form.name.value,
-            gender: form.gender.value,
-            age: form.age.value
-        });
-        form.name.value = '';
-        form.gender.value = '';
-        form.age.value = '';
-    });
-}
