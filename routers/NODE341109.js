@@ -21,7 +21,7 @@ router.get('/', function(req, res) {
 router.get('/about', function(req, res) {
   res.send(
     '<h1> About NODE341109 </h1>'+
-    '\n <img src="https://www.omgtw.com/upload/article/original/be134fac90625546754962aeef34925c.jpg" height="60%">'
+    '\n <img src="https://github.com/JustinLoedison/NODE341109/blob/2807dbe02e264fd8cbc56528bf1ca275327c9025/profile.jpg?raw=true" height="60%">'
     );
 });
 
